@@ -675,7 +675,7 @@
   margin-right: 5px;
 }
 .width-100px {
-  width: 100px;
+  width: 80px;
   padding: 10px;
 }
 .list-tabs-inner a {
@@ -715,18 +715,25 @@
 }
 .close {
   float: right;
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 32px;
+  top: 5px;
+  font-weight: 500;
   line-height: 1;
+  z-index: 999999;
+  position: relative;
   color: #212121;
   text-shadow: 0 1px 0 #fff;
   opacity: 0.5;
+}
+.fix-150{
+  min-height: 150px;
+  max-height: 150px;
 }
 button:focus {
   outline: none;
 }
 .btn.btn-light-primary {
-  border: 1.2px solid #eea743;
+  border: 1.2px solid #dd1a1e;
 }
 .justifyStarts {
   justify-content: start;
@@ -1043,6 +1050,12 @@ select.form-control {
   letter-spacing: normal;
   text-align: center;
   color: #231f20;
+}
+
+@media (min-width: 992px){
+.modal-lg, .modal-xl {
+    max-width: 600px;
+}
 }
 @media only screen and (min-width: 1200px) {
   .notification {

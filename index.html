@@ -208,7 +208,7 @@
                                     <h2>Tipo de emergencia</h2>
                                     <p>Grúa</p>
                                 </div>
-                                <a class="btn btn-primary text-white mb5">Ver emergencia</a>
+                                <a class="btn btn-primary text-white mb5" data-toggle="modal" data-target="#exampleModalCenter">Ver emergencia</a>
                                 </div>
                             </div>
                             <div class="col-lg-4 xs-textCenter mt10 mb20">
@@ -230,7 +230,7 @@
                                     <h2>Tipo de emergencia</h2>
                                     <p>Policía</p>
                                 </div>
-                                <a class="btn btn-primary text-white mb5">Ver emergencia</a>
+                                <a class="btn btn-primary text-white mb5" data-toggle="modal" data-target="#exampleModalCenter">Ver emergencia</a>
                                 </div>
                             </div>
                             <div class="col-lg-4 xs-textCenter mt10 mb20">
@@ -252,7 +252,7 @@
                                     <h2>Tipo de emergencia</h2>
                                     <p>Ambulancia</p>
                                 </div>
-                                <a class="btn btn-primary text-white mb5">Ver emergencia</a>
+                                <a class="btn btn-primary text-white mb5" data-toggle="modal" data-target="#exampleModalCenter">Ver emergencia</a>
                                 </div>
                             </div>
                         </div>
@@ -381,21 +381,64 @@
     </div>
 
 
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-md modal-dialog-centered pl30 pr30 xs-pl10 xs-pr10">
-        <div class="modal-content">
-            <div class="modal-body text-center mt20 mb20 ml5 mr5">
-                <!-- <p class="medal-text-title">Are you sure you want to reject service request?</p> -->
-                <h6 class="heading text-color-black after-center f-18 l-16 p0-30">Are you sure you want to reject appointment request?</h6>
-                <div class="model-buttons mt20">
-                    <button type="button" class="btn btn-primary mr5 ml5" data-dismiss="modal">No</button>
-                    <button type="button" class="btn btn-light-primary mr5 ml5"  data-dismiss="modal">Yes</button>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-block ">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title f-18 heading font-weight-600 w-95 pl10 pr10" id="exampleModalLongTitle">Fecha de solicitud</h5>
+                    <p class="f-14 text-black2 font-weight-500 pl10 pr10">28/07/2020 - 12:00hrs</p>
+                </div>
+                <div class="modal-body">
+               
+                        <div class="row pl10 pr10">
+                            <div class="col-lg-12">
+                              <img class="img-fluid mb20 fix-150" src="images/map.png">
+                             <div class="mb20">
+                                <h2 class="text-black f-16 font-weigh-600 xs-textLeft">
+                                    Ubicación actual <span class="font-weight-600 text-red1">Hace 5 min</span>
+                                </h2>
+                                <p class="text-black2 f-14 xs-textLeft">
+                                    Stresemannstr, 9 Schwalbach, Free State, Thuringia, 358065
+                                </p>
+                             </div>
+                             <div class=" mb20">
+                                <h2 class="text-black f-16 font-weigh-600 xs-textLeft">
+                                    Geo coordinates
+                                </h2>
+                                <p class="text-black2 f-14 xs-textLeft">
+                                    Latitude: 22.996040 & Longitude: 72.4996712
+                                </p>
+                             </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="mb20">
+                                    <h2 class="text-black f-16 font-weigh-600 xs-textLeft">
+                                        Número de Identificación Nacional
+                                    </h2>
+                                    <p class="text-black2 f-14 xs-textLeft">
+                                        N-XXXXXX-A
+                                    </p>
+                                 </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="mb20">
+                                    <h2 class="text-black f-16 font-weigh-600 xs-textLeft">
+                                        Número de teléfono
+                                    </h2>
+                                    <p class="text-black2 f-14 xs-textLeft">
+                                        +1 123 456 7890
+                                    </p>
+                                 </div>
+                            </div>
+                            <div class="col-12 mb10">
+                                <a class="btn btn-primary text-white">Ir al perfil</a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
         <!-- Scroll to top -->
         <a class="scrollTopButton" href="#."><i class='ti-arrow-up'></i></a>
         <!-- End Scroll to top -->
